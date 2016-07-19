@@ -12,11 +12,12 @@ cessing, and web connectivity.
 Python  is  often  praised  for  the  way  it  facilitates  productivity,  quality,  and  main-
 tainability of software. Please reffer a sample of Python success sotries at http://www.python.org/about/success/
 
- NLTK defines an infrastructure that can be used to build NLP programs in Python. It provides basic classes for representing 
- data relevant to natural language processing; standard interfaces for performing tasks such as part-of-speech tagging, 
- syntactic parsing, and text classification;and standard implementations for each task that can be combined to solve complex problems.
+Define : NLTK
+NLTK defines an infrastructure that can be used to build NLP programs in Python. It provides basic classes for representing 
+data relevant to natural language processing; standard interfaces for performing tasks such as part-of-speech tagging, 
+syntactic parsing, and text classification;and standard implementations for each task that can be combined to solve complex problems.
 NLTK comes with extensive documentation. Apart from the basic examples provided in the lectures covering all topics
 The website at http://www.nltk.org/  provides API documentation that covers every module, class, and
 function in the toolkit, specifying parameters and giving examples of usage. The website also provides many HOWTOs with extensive examples and test cases, intended for
 users, developers, and instructors.
-.
+
