@@ -1,0 +1,14 @@
+Why python?
+-shallow learning curve
+-transparent syntax and semantics 
+- good  string-handling functionality.
+-As an interpreted language,Python facilitates interactive exploration. 
+-As an object-oriented language, Python permits data and methods to be encapsulated and re-used easily. 
+-As a dynamic language,Python permits attributes to be added to objects on the fly, and permits variables to be
+typed dynamically, facilitating rapid development.
+-Python comes with an extensive standard library, including components for graphical programming, numerical pro-
+cessing, and web connectivity.
+ So in a nutshell Python is heavily used in industry, scientific research, and education around the world.
+Python  is  often  praised  for  the  way  it  facilitates  productivity,  quality,  and  main-
+tainability of software. Please reffer a sample of Python success sotries at http://www.python.org/about/success/
+.
