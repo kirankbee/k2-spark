@@ -21,3 +21,23 @@ The website at http://www.nltk.org/  provides API documentation that covers ever
 function in the toolkit, specifying parameters and giving examples of usage. The website also provides many HOWTOs with extensive examples and test cases, intended for
 users, developers, and instructors.
 
+Artificial intelligence in language processing ( AILP )
+A feild of computer sceicne and linguistics concerned wih the interactions between machine and human natural language ( english )
+Natural language is sometime understood as AI-complete  problem because it seemst orequire enoromous knowledge about the outside world
+and the ability to manipulate it.
+What is NLP?
+it refers to AI method of communicating with an intelligent systems using a natural language such as English.
+What are the components of NLP?
+Natural Language Understandign ( NLU) :1) Mapping the given input into useful representations 2) Analyzing different aspects of the language
+Natrual Language generation  ( NLG) : 1)It is the process of producing meaningful phses and sentences in the form of natural langauge 
+1) text planning : retreving relevant content from aknoweldge base ( ex: US corpora )
+2)Senetence planning : it includes chosing words, forming meaningful phrases, setteing tone of the sentence.
+3)text Realization : It involves mapping sentence plan into sentence structure.
+
+What are the ambiguities of NLU?
+1)Lexical : at primitive level such as word-level, treating the word "draft" as noun or verb.
+2)Syntax level : He lifted the puppy with a blue cap? exactly lifted with what?
+
+3)Referential : referring to something using pronouns: sami went to simran, she said " I am tired" exactly who is tired?
+
+
