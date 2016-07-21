@@ -87,4 +87,12 @@ Standalone deployments - Well suited for new which only run and quick to set up.
  cmputations where the transformations on RDDs are applied over a sliding windows of data.Whenever window slides, the RDDs that 
  fall wintin the particular windows are combined and operated upon to produce new RDDs of the windowed DStream.
  
- 22)
+ 22) how persistence works and What are the levels of persistence in Apache spark
+ Aapche spark automatically persists the intermedeary data from various shuffle operations. How ever it is a good practice
+ to call persist() method on the RDD in case if you plan to reuses it. Spark has various persitance levels to store the RDDs on disk
+ or in memeory or as a combination of both with different replication levels
+ sucha s   MEMORY_ONLY, MEMEORY_ONLY_SER, MEMEORY_AND_DISK, MEMEORY_AND_DISK_SER, DISK_ONLY, PFF_HEAP
+ 
+ 23)
+ 
+ 
