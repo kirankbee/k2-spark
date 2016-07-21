@@ -1,0 +1,31 @@
+1) What are the top features of Spark that interests you
+  Ans : 
+    Spark provides advanced analytic options like graph algorithms, machine learning, streaming data, etc
+    It has built-in APIs in multiple languages like Java, Scala, Python and R
+    It has good performance gains, as it helps run an application in the Hadoop cluster ten times faster on disk and 100 times faster in memory.
+2) How Spark uses Hadoop 
+Ans: Spark has built in cluster management solution , it uses Hadoop for storage
+3) Define the various data sources available in SparkSQL
+ans: Parquet file: Parquet file is a columnar format file that helps –
+
+    Limit I/O operations
+    Consumes less space
+    Fetches only required columns.
+ JSON data set and Hive tables
+4)what is developer dilemma with Spark applications?
+Ans: Hitting the web service several times by using multiple clusters.
+Run everything on the local node instead of distributing it.
+Beware :  Spark makes use of memory for processing.
+5)How do you compare Hadoop and Spark?
+Ans: Hadoop MapReduce requires programming in Java which is difficult, 
+though Pig and Hive make it considerably easier. 
+Learning Pig and Hive syntax takes time. 
+Spark has interactive APIs for different languages like Java, Python or Scala 
+and includes Shark [Spark SQL for SQL lovers - making it comparatively easier to use than Hadoop.]
+6) What is BlinkDB and where itis used?
+Ans:BlinkDB is a query engine for executing interactive SQL queries on huge volumes of data
+and renders query results marked with meaningful error bars. 
+BlinkDB helps users balance ‘query accuracy’ with response time.
+
+7)What is Tachyon? it is a Spark library for reliable file sharing at memory speed across different cluster frameworks
+8)
