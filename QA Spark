@@ -3,29 +3,88 @@
     Spark provides advanced analytic options like graph algorithms, machine learning, streaming data, etc
     It has built-in APIs in multiple languages like Java, Scala, Python and R
     It has good performance gains, as it helps run an application in the Hadoop cluster ten times faster on disk and 100 times faster in memory.
+
 2) How Spark uses Hadoop 
 Ans: Spark has built in cluster management solution , it uses Hadoop for storage
+
 3) Define the various data sources available in SparkSQL
 ans: Parquet file: Parquet file is a columnar format file that helps –
-
-    Limit I/O operations
-    Consumes less space
-    Fetches only required columns.
+    Limit I/O operations ,Consumes less space,Fetches only required columns.
  JSON data set and Hive tables
+
 4)what is developer dilemma with Spark applications?
 Ans: Hitting the web service several times by using multiple clusters.
 Run everything on the local node instead of distributing it.
 Beware :  Spark makes use of memory for processing.
+
 5)How do you compare Hadoop and Spark?
 Ans: Hadoop MapReduce requires programming in Java which is difficult, 
-though Pig and Hive make it considerably easier. 
-Learning Pig and Hive syntax takes time. 
+though Pig and Hive make it considerably easier. Learning Pig and Hive syntax takes time. 
 Spark has interactive APIs for different languages like Java, Python or Scala 
 and includes Shark [Spark SQL for SQL lovers - making it comparatively easier to use than Hadoop.]
+
 6) What is BlinkDB and where itis used?
 Ans:BlinkDB is a query engine for executing interactive SQL queries on huge volumes of data
 and renders query results marked with meaningful error bars. 
 BlinkDB helps users balance ‘query accuracy’ with response time.
 
 7)What is Tachyon? it is a Spark library for reliable file sharing at memory speed across different cluster frameworks
-8)
+
+8)Exzmples where spark outperforms Hadoop
+Ans 1) Sensor farms : in memeory computing is the best as the data coming from different sources
+
+2)Real time querrying of data
+
+3)Stream processing : for processing logs and detecting frauds in live streams for alerts etc...
+
+9)Sparse vector : It has two aprallel arrays - one for indices and other for values. these vecotrs are used for stroing non-zero entries to save space
+
+10) RDD: a Resilient distributed data set , the basis of Apache spark. represent the data coming from the system in 
+object format. RDD's used for in-memory computing on large clusters, in a fault tolerant manner.
+RDD's are read-only partitioned ,colelction of recrods that are-Immutable &Resilient
+
+11) Transformations and actions in the context of RDD's
+Transofrmations are functions executed on demand, to produce a new RDD. All transformations are followed by actions ( ex: map, reduce,filterByKey)
+Actions are the results of RDD computations or transformation.Once an action is performed the data from RDD moves back ot the local machine
+(ex:reduce, collect, first,take )
+
+12) what are differnet cluster managers in Apache Spark 
+YARN, Apache mesos ( Has rich resource scheduling capabilities and is well suited to run Spark along with other applications. It is advantageous when several users run interactive shells because 
+it scales down the CPU allocation between commands.)
+Standalone deployments - Well suited for new which only run and quick to set up.
+
+13) Hwo do you connect Spark to Apache mesos
+1 )configure the spark driver program to ocnnect ot mesos, Spark binary package should be in a location accessible by mesos
+ or 2) Install apache spark in the same location as that of Apache mesos and configure the property spark.mesos.executor.home
+ to point to the location of installation path.
+ 
+ 14) what are the tips for minimixing data trasnfers when working with spark.
+ Minimzing data trasnffers and avoiding shuffilkng helps to write spark programs that run in a fast and reliable manner. 
+ the way to minimize are : using broadcast varaible - to enahance the eefiiciency of joins between small & large RDD's
+ Using accumulators: help update the values of varibales in parallel while executing
+ Avoid operations BYKey, repartition or an other operations which trigger shuffles.
+ 
+ 15) Broadcast variables are readonly variables that preent in-mem cache on every macine. When working with spark usage of braocast
+ variables eliminates the neeed to ship coppies of varibales for eveyr task, so data can be processed faster. Boradcast vraibles
+ help in storing a look up table inside memory which enahances the retreival when compared to an RDD lookup ().
+ 
+ 16) spark.cleaner.ttl : an automatic cleaner service in spark exo ssytem
+ 
+ 17) how to trigger automatic clean up in spark : by setting the parametr spark.cleaner.ttl or by divinding the lon running 
+ jobs into differnet batches and writing the intermedeatery results to the disk.
+ 
+ 18) what are the major libraries of spark : Spark MLILB, Spark streaming, SPark GraphX(API for graph parallel computations with basic operators like joinVertices, subgraph, aggregateMessages, etc.)
+ , Spark SQL
+ 
+ 19)DStream ( Discretized stream ) is a stream RDD can be created from various sources like Apache kafka, HDFS & flume.
+ 
+ 20) DStream transformations are: Stateless transformations , processing o f abatch doe no depend on previsou batch
+ Stateful transformation : processing of batch depends on intermedeary results of the previsou batch, ex transformations that depend
+ on sliding wndows.
+
+ 21) no whwat is sliding window operation :
+ Sliding windows ocntrols transmission fo data packets between various computer networks.Spark Streaming library provides windowed
+ cmputations where the transformations on RDDs are applied over a sliding windows of data.Whenever window slides, the RDDs that 
+ fall wintin the particular windows are combined and operated upon to produce new RDDs of the windowed DStream.
+ 
+ 22)
